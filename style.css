@@ -4,12 +4,15 @@
 }
 
 header {
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #2597F4;
 }
 
 header p {
     display: inline;
     margin-left: 10%;
+    color: #f7f7f7;
 }
 
 nav {
@@ -23,13 +26,103 @@ nav a {
 }
 
 #inicio {
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 nav a:link{
-    color: white;
+    color: #f7f7f7;
 }
 
 nav a:hover{
     color: orange;
+}
+
+section {
+    border: solid;
+    border-color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px gray;
+    margin: 3% 10%;
+}
+
+.contenedorInicio {
+    display: flex;
+}
+
+.textoSeccion {
+    margin-top: 3%;
+    margin-left: 3%;
+    /* border: solid #2597F4; */
+}
+
+.textoSeccion p {
+    margin-top: 5%;
+}
+
+.imagenSeccion{
+    /* border: solid; */
+    margin: 1% 10% 1% 1%;
+    /* border-color: #2597F4; */
+}
+
+.contenedorServicios {
+    
+}
+
+.mallaServicios{
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+}
+
+.mallaServicios img{
+    position: absolute;
+    margin-left: 3%;
+}
+
+.mallaServicios h3{
+    position: absolute;
+    margin-left: 10%;
+}
+
+.mallaServicios p{
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+.web {
+    margin-top: -0.8%;
+}
+
+.laptop {
+    margin-top: -1.5%;
+}
+
+.linux {
+    margin-top: -1.5%;
+}
+
+.seo {
+    margin-top: -0.7%;
+}
+
+article {
+    margin-bottom: 5%;
+}
+
+footer {
+    padding: 1% 0% 1% 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2597F4;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
