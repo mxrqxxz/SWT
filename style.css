@@ -4,19 +4,25 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #2597F4;
 }
 
-header p {
+header img {
     display: inline;
     margin-left: 10%;
     color: #f7f7f7;
 }
 
 nav {
+    position: fixed;
+    width: 100%;
     display: inline;
+    margin-top: 0.3%;
 }
 
 nav a {
@@ -38,6 +44,7 @@ nav a:hover{
 }
 
 section {
+    background-color: #f7f7f7;
     border: solid;
     border-color: gray;
     border-radius: 10px;
@@ -47,6 +54,7 @@ section {
 
 .contenedorInicio {
     display: flex;
+    margin-top: 6%;
 }
 
 .textoSeccion {
@@ -63,35 +71,32 @@ section {
     /* border: solid; */
     margin: 1% 10% 1% 1%;
     /* border-color: #2597F4; */
-}
-
-.contenedorServicios {
-    
+    padding: 3%;
 }
 
 .mallaServicios{
-    position: relative;
     margin-top: 5%;
     display: flex;
 }
 
 .mallaServicios img{
-    position: absolute;
-    margin-left: 3%;
+    margin-left: 10%;
 }
 
 .mallaServicios h3{
-    position: absolute;
-    margin-left: 10%;
+    margin-left: 40%;
+    margin-top: -14%;
+    display: block;
 }
 
 .mallaServicios p{
     margin-top: 20%;
     margin-left: 15%;
+    margin-right: 15%;
 }
 
 .web {
-    margin-top: -0.8%;
+    margin-top: 4%;
 }
 
 .laptop {
@@ -103,18 +108,32 @@ section {
 }
 
 .seo {
-    margin-top: -0.7%;
+    margin-top: 5%;
 }
 
 article {
-    margin-bottom: 5%;
+    margin: 0% 2% 5% 2%;
+    border: solid gray;
+    border-radius: 10px;
+    padding: 2% 0%;
+}
+
+.mallaTecnologias {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.mallaTecnologias h1{
+    padding-bottom: 2%;
+}
+
+.mallaClientes {
+    margin: 3% 0% 3% 0%;
+    text-align: center;
 }
 
 footer {
     padding: 1% 0% 1% 1%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #2597F4;
 }
 
