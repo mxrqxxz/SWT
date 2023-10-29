@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <section class="contenedorInicio">
+        <section class="contenedorFlex">
             <div class="textoSeccion">
                 <h1>Sus necesidades, nuestra empresa</h1>
                 <p>Tenemos una premisa muy sencilla, ofrecer la solución necesaria para poder solucionar un problema en
@@ -71,13 +71,19 @@
             </div>
             <div class="mallaTecnologias">
                 <h1>Tecnologías empleadas para el desarrollo web</h3>
-                <img usemap="#mapaTecnologias" src="images/tecnologias.png" alt="Para el desarrollo web empleados las siguientes tecnologías: HTML, CSS, JS y PHP.">
-                <map name="mapaTecnologias">
-                    <area shape="rect" coords="0,0,180,142" href="https://developer.mozilla.org/es/docs/Web/HTML" alt="Página acerca del lenguaje HTML" target="_blank">
-                    <area shape="rect" coords="181,0,380,142" href="https://developer.mozilla.org/es/docs/Web/CSS" alt="Página acerca del lenguaje CSS" target="_blank">
-                    <area shape="rect" coords="380,0,590,142" href="https://developer.mozilla.org/es/docs/Web/JavaScript" alt="Página acerca del lenguaje JS" target="_blank">
-                    <area shape="rect" coords="590,0,870,142" href="https://www.php.net/manual/es/intro-whatis.php" alt="Página acerca del lenguaje PHP" target="_blank">
-                </map>
+                    <img usemap="#mapaTecnologias" src="images/tecnologias.png"
+                        alt="Para el desarrollo web empleados las siguientes tecnologías: HTML, CSS, JS y PHP.">
+                    <map name="mapaTecnologias">
+                        <area shape="rect" coords="0,0,180,142" href="https://developer.mozilla.org/es/docs/Web/HTML"
+                            alt="Página acerca del lenguaje HTML" target="_blank">
+                        <area shape="rect" coords="181,0,380,142" href="https://developer.mozilla.org/es/docs/Web/CSS"
+                            alt="Página acerca del lenguaje CSS" target="_blank">
+                        <area shape="rect" coords="380,0,590,142"
+                            href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                            alt="Página acerca del lenguaje JS" target="_blank">
+                        <area shape="rect" coords="590,0,870,142" href="https://www.php.net/manual/es/intro-whatis.php"
+                            alt="Página acerca del lenguaje PHP" target="_blank">
+                    </map>
             </div>
         </section>
         <section>
@@ -87,15 +93,66 @@
             <div class="mallaClientes">
                 <img usemap="#mapaSensible" src="images/clientes.png" alt="malla de clientes">
                 <map name="mapaSensible">
-                    <area shape="rect" coords="0,0,182,330" href="https://www.nike.com/es/" alt="Enlace a página oficial de Nike" target="_blank">
-                    <area shape="rect" coords="183,0,392,330" href="https://www.gucci.com/es/es/" alt="Enlace a página oficial de Gucci" target="_blank">
-                    <area shape="rect" coords="393,0,580,330" href="https://www.zara.com/es/" alt="Enlace a página oficial de Zara" target="_blank">
+                    <area shape="rect" coords="0,0,182,330" href="https://www.nike.com/es/"
+                        alt="Enlace a página oficial de Nike" target="_blank">
+                    <area shape="rect" coords="183,0,392,330" href="https://www.gucci.com/es/es/"
+                        alt="Enlace a página oficial de Gucci" target="_blank">
+                    <area shape="rect" coords="393,0,580,330" href="https://www.zara.com/es/"
+                        alt="Enlace a página oficial de Zara" target="_blank">
                 </map>
+            </div>
+        </section>
+        <section class="contenedorFlex">
+            <div class="textoSeccion">
+                <h1>Contrataciones</h1>
+                <p>Para poder proporcionar la una solución personalizada que se adapte a las necesidades de su empresa
+                    es neceario que complete un formulario, facilitándonos una idea de la envergadura del proyecto.</p>
+                <form action="mailto:4186790@alu.murciaeduca.es" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <br><br>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo">
+                    <br><br>
+                    <label for="tlf">Teléfono</label>
+                    <input type="tel" name="tlf" id="tlf">
+                    <br><br>
+                    <label for="servicios">Servicios va a requerir</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="web" value="web" checked>
+                    <label for="web">Página web</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="seo" value="seo">
+                    <label for="seo">Posicionamiento web</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="multiplataforma" value="multiplataforma">
+                    <label for="multiplataforma">Aplicación</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="sistemas" value="sistemas">
+                    <label for="sistemas">Programación de sistemas</label>
+                    <br><br>
+                    <label for="bbdd">Necesitará base de datos</label>
+                    <br><br>
+                    <input type="radio" name="bbdd" id="bbdd" value="si" checked>
+                    <label for="si">Si</label>
+                    <input type="radio" name="bbdd" id="bbdd" value="no">
+                    <label for="no">No</label>
+                    <br><br>
+                    <label for="archivo">En caso de que tenga en mente un proyecto de referencia, adjunte una foto de dicho proyecto</label>
+                    <br><br>
+                    <input type="file" name="archivo" id="archivo" accept="image/*">
+                    <br><br>
+                    <textarea name="comentario" id="comentario" cols="80" rows="10" placeholder="Introduzca aquí su idea de proyecto..."></textarea>
+                </form>
+            </div>
+            <div class="imagenContratacion">
+                <img src="images/LogoGrande1.png" alt="Logo de la empresa">
             </div>
         </section>
     </main>
     <footer>
-        <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">Página comprometida con la ley de protección de
+        <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673" target="_blank">Página comprometida con la ley
+            de protección de
             datos.</a>
     </footer>
 </body>

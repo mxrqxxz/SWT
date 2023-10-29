@@ -45,14 +45,14 @@ nav a:hover{
 
 section {
     background-color: #f7f7f7;
-    border: solid;
+    border: thin;
     border-color: gray;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px gray;
     margin: 3% 10%;
 }
 
-.contenedorInicio {
+.contenedorFlex {
     display: flex;
     margin-top: 6%;
 }
@@ -130,6 +130,11 @@ article {
 .mallaClientes {
     margin: 3% 0% 3% 0%;
     text-align: center;
+}
+
+.imagenContratacion {
+    margin: 15% 5% 10% 10%;
+    padding: 3%;
 }
 
 footer {
