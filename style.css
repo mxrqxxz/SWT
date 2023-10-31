@@ -12,6 +12,10 @@ header {
     background-color: #2597F4;
 }
 
+body {
+    background-color: #f7f7f7;
+}
+
 header img {
     display: inline;
     margin-left: 10%;
@@ -44,7 +48,7 @@ nav a:hover{
 }
 
 section {
-    background-color: #f7f7f7;
+    background-color: white;
     border: thin;
     border-color: gray;
     border-radius: 10px;
@@ -54,13 +58,24 @@ section {
 
 .contenedorFlex {
     display: flex;
+}
+
+#contenedor1 {
     margin-top: 6%;
+}
+
+.contenedorFlex .textoSeccion h1 {
+    margin-top: -4%;
 }
 
 .textoSeccion {
     margin-top: 3%;
     margin-left: 3%;
     /* border: solid #2597F4; */
+}
+
+.textoSeccion h1{
+    padding-top: 2%;
 }
 
 .textoSeccion p {
@@ -75,7 +90,7 @@ section {
 }
 
 .mallaServicios{
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
 }
 
@@ -85,7 +100,7 @@ section {
 
 .mallaServicios h3{
     margin-left: 40%;
-    margin-top: -14%;
+    margin-top: -16%;
     display: block;
 }
 
@@ -133,8 +148,12 @@ article {
 }
 
 .imagenContratacion {
-    margin: 15% 5% 10% 10%;
+    margin: 15% 5% 10% -10%;
     padding: 3%;
+}
+
+textarea {
+    resize: none;
 }
 
 footer {
