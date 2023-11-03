@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -32,6 +33,7 @@ nav {
 nav a {
     margin-left: 8%;
     text-align: center;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -44,7 +46,7 @@ nav a:link{
 }
 
 nav a:hover{
-    color: orange;
+    text-decoration: underline;
 }
 
 section {
@@ -54,6 +56,7 @@ section {
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px gray;
     margin: 3% 10%;
+    padding-bottom: 1%;
 }
 
 .contenedorFlex {
@@ -62,6 +65,7 @@ section {
 
 #contenedor1 {
     margin-top: 6%;
+    padding-bottom: -3%;
 }
 
 .contenedorFlex .textoSeccion h1 {
@@ -84,9 +88,9 @@ section {
 
 .imagenSeccion{
     /* border: solid; */
-    margin: 1% 10% 1% 1%;
+    margin: 2% 6% 0% 2%;
     /* border-color: #2597F4; */
-    padding: 3%;
+    padding: 1%;
 }
 
 .mallaServicios{
@@ -135,7 +139,7 @@ article {
 
 .mallaTecnologias {
     text-align: center;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 .mallaTecnologias h1{
@@ -147,6 +151,10 @@ article {
     text-align: center;
 }
 
+#clientes {
+    border-radius: 15px;
+}
+
 .imagenContratacion {
     margin: 15% 5% 10% -10%;
     padding: 3%;
@@ -154,6 +162,10 @@ article {
 
 textarea {
     resize: none;
+}
+
+.radio {
+    margin-right: 2%;
 }
 
 footer {

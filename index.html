@@ -11,11 +11,14 @@
     <title>SWT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="images/LogoHeader.png" alt="">
+        <img src="images/LogoHeader.svg" alt="Logo de la empresa">
         <nav>
             <a href="#" id="inicio">Inicio</a>
             <a href="#">Servicios</a>
@@ -32,7 +35,7 @@
                     su empresa a través del desarrollo de software.</p>
             </div>
             <div class="imagenSeccion">
-                <img src="images/LogoGrande1.png" alt="Logo de la empresa">
+                <img src="images/logoGrande.svg" alt="Logo de la empresa">
             </div>
         </section>
         <section>
@@ -41,28 +44,28 @@
             </div>
             <div class="mallaServicios">
                 <article>
-                    <img class="web" width="50px" src="images/web.jpg" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" width="50px" src="images/web.png" alt="Icono de desarrollo web">
                     <h3>Web</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="laptop" width="70px" src="images/laptop.jpg" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" width="70px" src="images/laptop.png" alt="Icono de desarrollo web">
                     <h3>Multiplataforma</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="linux" width="80px" src="images/linux.jpg" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" width="80px" src="images/linux.png" alt="Icono de desarrollo web">
                     <h3>Sistemas Linux</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="seo" width="40px" src="images/seo.png" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" width="40px" src="images/seo.png" alt="Icono de desarrollo web">
                     <h3>SEO</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
@@ -91,7 +94,7 @@
                 <h1>Clientes que ya han quedado satisfechos</h1>
             </div>
             <div class="mallaClientes">
-                <img usemap="#mapaSensible" src="images/clientes.png" alt="malla de clientes">
+                <img usemap="#mapaSensible" src="images/clientes.png" alt="malla de clientes" id="clientes">
                 <map name="mapaSensible">
                     <area shape="rect" coords="0,0,182,330" href="https://www.nike.com/es/"
                         alt="Enlace a página oficial de Nike" target="_blank">
@@ -108,6 +111,8 @@
                 <p>Para poder proporcionar la una solución personalizada que se adapte a las necesidades de su empresa
                     es neceario que complete un formulario, facilitándonos una idea de la envergadura del proyecto.</p>
                 <form action="mailto:4186790@alu.murciaeduca.es" method="post">
+                    <p>Datos personales</p>
+                    <br><br>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
                     <br><br>
@@ -115,9 +120,9 @@
                     <input type="email" name="correo" id="correo">
                     <br><br>
                     <label for="tlf">Teléfono</label>
-                    <input type="tel" name="tlf" id="tlf">
+                    <input type="number" name="tlf" id="tlf">
                     <br><br>
-                    <label for="servicios">Servicios va a requerir</label>
+                    <p>Servicios va a requerir</p>
                     <br><br>
                     <input type="checkbox" name="servicios" id="web" value="web" checked>
                     <label for="web">Página web</label>
@@ -131,12 +136,12 @@
                     <input type="checkbox" name="servicios" id="sistemas" value="sistemas">
                     <label for="sistemas">Programación de sistemas</label>
                     <br><br>
-                    <label for="bbdd">Necesitará base de datos</label>
+                    <p>Necesitará base de datos</p>
                     <br><br>
                     <input type="radio" name="bbdd" id="bbdd" value="si" checked>
-                    <label for="si">Si</label>
+                    <label for="si" class="radio">Si</label>
                     <input type="radio" name="bbdd" id="bbdd" value="no">
-                    <label for="no">No</label>
+                    <label for="no" class="radio">No</label>
                     <br><br>
                     <label for="archivo">En caso de que tenga en mente un proyecto de referencia, adjunte una foto de dicho proyecto</label>
                     <br><br>
@@ -146,7 +151,7 @@
                 </form>
             </div>
             <div class="imagenContratacion">
-                <img src="images/LogoGrande1.png" alt="Logo de la empresa">
+                <img src="images/logoGrande.svg" alt="Logo de la empresa">
             </div>
         </section>
     </main>
