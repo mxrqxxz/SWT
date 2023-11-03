@@ -41,11 +41,11 @@ nav a {
     margin-left: 20%;
 }
 
-nav a:link{
+nav a:link {
     color: #f7f7f7;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
@@ -78,7 +78,7 @@ section {
     /* border: solid #2597F4; */
 }
 
-.textoSeccion h1{
+.textoSeccion h1 {
     padding-top: 2%;
 }
 
@@ -86,48 +86,32 @@ section {
     margin-top: 5%;
 }
 
-.imagenSeccion{
+.imagenSeccion {
     /* border: solid; */
     margin: 2% 6% 0% 2%;
     /* border-color: #2597F4; */
     padding: 1%;
 }
 
-.mallaServicios{
+.mallaServicios {
     margin-top: 3%;
     display: flex;
 }
 
-.mallaServicios img{
+.mallaServicios img {
     margin-left: 10%;
 }
 
-.mallaServicios h3{
+.mallaServicios h3 {
     margin-left: 40%;
-    margin-top: -16%;
+    margin-top: -11%;
     display: block;
 }
 
-.mallaServicios p{
+.mallaServicios p {
     margin-top: 20%;
     margin-left: 15%;
     margin-right: 15%;
-}
-
-.web {
-    margin-top: 4%;
-}
-
-.laptop {
-    margin-top: -1.5%;
-}
-
-.linux {
-    margin-top: -1.5%;
-}
-
-.seo {
-    margin-top: 5%;
 }
 
 article {
@@ -142,7 +126,7 @@ article {
     padding-bottom: 1%;
 }
 
-.mallaTecnologias h1{
+.mallaTecnologias h1 {
     padding-bottom: 2%;
 }
 
@@ -178,6 +162,34 @@ footer a {
     color: #f7f7f7;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.textoSeccion2 {
+    margin-top: 3%;
+    margin-left: 3%;
+    max-width: 95%;
+    /* border: solid #2597F4; */
+}
+
+.textoSeccion2 p{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    /* border: solid #2597F4; */
+}
+.textoSeccion2 h2{
+
+    margin-bottom: 2%;
+    /* border: solid #2597F4; */
 }

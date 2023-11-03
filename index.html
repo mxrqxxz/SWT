@@ -10,7 +10,7 @@
         content="SWT, Software Troupe, desarrollo de software, software, development, developer, html, css, js, Shellscript, SEO, programación">
     <title>SWT</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagesPNG/favicon.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&display=swap');
     </style>
@@ -18,13 +18,13 @@
 
 <body>
     <header>
-        <img src="images/LogoHeader.svg" alt="Logo de la empresa">
+        <img src="imagesPNG/LogoHeader.svg" alt="Logo de la empresa">
         <nav>
-            <a href="#" id="inicio">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contratación</a>
-            <a href="#">Soporte</a>
+            <a href="index.html" id="inicio">Inicio</a>
+            <a href="index.html#services">Servicios</a>
+            <a href="index.html#clientes">Clientes</a>
+            <a href="index.html#contrataciones">Contratación</a>
+            <a href="soporte.html">Soporte</a>
         </nav>
     </header>
     <main>
@@ -35,37 +35,37 @@
                     su empresa a través del desarrollo de software.</p>
             </div>
             <div class="imagenSeccion">
-                <img src="images/logoGrande.svg" alt="Logo de la empresa">
+                <img src="imagesPNG/logoGrande.svg" alt="Logo de la empresa">
             </div>
         </section>
-        <section>
+        <section id="services">
             <div class="textoSeccion">
                 <h1>Nuestros servicios</h1>
             </div>
             <div class="mallaServicios">
                 <article>
-                    <img class="imagenServicios" width="50px" src="images/web.png" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" src="imagesPNG/web.png" alt="Icono de desarrollo web">
                     <h3>Web</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="imagenServicios" width="70px" src="images/laptop.png" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" src="imagesPNG/ordenador.png" alt="Icono de desarrollo web">
                     <h3>Multiplataforma</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="imagenServicios" width="80px" src="images/linux.png" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" src="imagesPNG/linux.png" alt="Icono de desarrollo web">
                     <h3>Sistemas Linux</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
                         ullamcorper erat, nec egestas erat. Ut efficitur at purus ac pretium.</p>
                 </article>
                 <article>
-                    <img class="imagenServicios" width="40px" src="images/seo.png" alt="Icono de desarrollo web">
+                    <img class="imagenServicios" src="imagesPNG/seo.png" alt="Icono de desarrollo web">
                     <h3>SEO</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur mauris malesuada elit
                         finibus elementum vitae vitae ipsum. Maecenas mattis risus vitae leo maximus blandit. Sed a
@@ -74,7 +74,7 @@
             </div>
             <div class="mallaTecnologias">
                 <h1>Tecnologías empleadas para el desarrollo web</h3>
-                    <img usemap="#mapaTecnologias" src="images/tecnologias.png"
+                    <img usemap="#mapaTecnologias" src="imagesPNG/tecnologias.png"
                         alt="Para el desarrollo web empleados las siguientes tecnologías: HTML, CSS, JS y PHP.">
                     <map name="mapaTecnologias">
                         <area shape="rect" coords="0,0,180,142" href="https://developer.mozilla.org/es/docs/Web/HTML"
@@ -89,12 +89,12 @@
                     </map>
             </div>
         </section>
-        <section>
+        <section id="clientes">
             <div class="textoSeccion">
                 <h1>Clientes que ya han quedado satisfechos</h1>
             </div>
             <div class="mallaClientes">
-                <img usemap="#mapaSensible" src="images/clientes.png" alt="malla de clientes" id="clientes">
+                <img usemap="#mapaSensible" src="imagesPNG/clientes.png" alt="malla de clientes" id="clientes">
                 <map name="mapaSensible">
                     <area shape="rect" coords="0,0,182,330" href="https://www.nike.com/es/"
                         alt="Enlace a página oficial de Nike" target="_blank">
@@ -105,7 +105,7 @@
                 </map>
             </div>
         </section>
-        <section class="contenedorFlex">
+        <section id="contrataciones" class="contenedorFlex">
             <div class="textoSeccion">
                 <h1>Contrataciones</h1>
                 <p>Para poder proporcionar la una solución personalizada que se adapte a las necesidades de su empresa
@@ -143,15 +143,17 @@
                     <input type="radio" name="bbdd" id="bbdd" value="no">
                     <label for="no" class="radio">No</label>
                     <br><br>
-                    <label for="archivo">En caso de que tenga en mente un proyecto de referencia, adjunte una foto de dicho proyecto</label>
+                    <label for="archivo">En caso de que tenga en mente un proyecto de referencia, adjunte una foto de
+                        dicho proyecto</label>
                     <br><br>
                     <input type="file" name="archivo" id="archivo" accept="image/*">
                     <br><br>
-                    <textarea name="comentario" id="comentario" cols="80" rows="10" placeholder="Introduzca aquí su idea de proyecto..."></textarea>
+                    <textarea name="comentario" id="comentario" cols="80" rows="10"
+                        placeholder="Introduzca aquí su idea de proyecto..."></textarea>
                 </form>
             </div>
             <div class="imagenContratacion">
-                <img src="images/logoGrande.svg" alt="Logo de la empresa">
+                <img src="imagesPNG/logoGrande.svg" alt="Logo de la empresa">
             </div>
         </section>
     </main>
