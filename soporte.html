@@ -7,16 +7,19 @@
     <title>SWT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagesPNG/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="images/LogoHeader.png" alt="">
+        <a href="index.html"target="_blank"><img src="imagesPNG/logoHeader.svg" alt="Logo de la empresa"></a>
         <nav>
-            <a href="index.html" id="inicio">Inicio</a>
-            <a href="index.html#services">Servicios</a>
-            <a href="index.html#clientes">Clientes</a>
-            <a href="#">Contratación</a>
+            <a href="index.html" target="_blank" id="inicio">Inicio</a>
+            <a href="index.html#services" target="_blank">Servicios</a>
+            <a href="index.html#clientes" target="_blank">Clientes</a>
+            <a href="index.html#contrataciones" target="_blank">Contratación</a>
             <a href="#">Soporte</a>
         </nav>
     </header>
@@ -87,8 +90,8 @@
                         </p>
                     </li>
                     <li>
-                        <strong>Pregunta 8:</strong> ¿Cuál es el costo de sus servicios de desarrollo de software?
-                        <p>El costo de nuestros servicios varía según la complejidad del proyecto y el alcance de
+                        <strong>Pregunta 8:</strong> ¿Cuál es el coste de sus servicios de desarrollo de software?
+                        <p>El coste de nuestros servicios varía según la complejidad del proyecto y el alcance de
                             trabajo. Te proporcionaremos un presupuesto personalizado después de discutir tus
                             requerimientos específicos en detalle. Estamos comprometidos a ofrecer soluciones de
                             alto
@@ -98,22 +101,48 @@
             </div>
         </section>
 
-        <section class="contenedorFlex">
+        <section id="contrataciones" class="contenedorFlex">
             <div class="textoSeccion">
-                <h2>Contáctanos</h2>
-                <form action="procesar_formulario.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <h1>Soporte</h1>
+                <p>¡Bienvenido a nuestra página de soporte! Estamos aquí para ayudarte. Por favor, completa el
+                    formulario a continuación para que podamos resolver tus necesidades de manera rápida y eficiente.
+                    ¡Gracias!</p>
+                <form action="mailto:softwaretroupe@gmail.com" method="post">
+                    <p>Datos personales</p>
                     <br><br>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
                     <br><br>
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" cols="80" rows="1"
-                        placeholder="Introduzca aquí su idea de proyecto..." required></textarea><br>
+                    <label for="correo">Correo</label>
+                    <input id="correo" type="email" name="correo" id="correo">
                     <br><br>
-                    <button type="submit">Enviar</button>
+                    <label for="tlf">Teléfono</label>
+                    <input type="number" name="tlf" id="tlf">
+                    <br><br>
+                    <p>Servicios en los que necesita ayuda</p>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="web" value="web" checked>
+                    <label for="web">Página web</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="seo" value="seo">
+                    <label for="seo">Posicionamiento web</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="multiplataforma" value="multiplataforma">
+                    <label for="multiplataforma">Aplicación</label>
+                    <br><br>
+                    <input type="checkbox" name="servicios" id="sistemas" value="sistemas">
+                    <label for="sistemas">Programación de sistemas</label>
+                    <br><br><br>
+                    <label for="archivo">Si tiene una imagen del error, adjúntela.</label>
+                    <br><br>
+                    <input type="file" name="archivo" id="archivo" accept="image/*">
+                    <br><br>
+                    <textarea name="comentario" id="comentario" cols="80" rows="5"
+                        placeholder="Exponga brevemente la incidencia..."></textarea>
                 </form>
+            </div>
+            <div class="imagenContratacion">
+                <img src="imagesPNG/logoGrande.svg" alt="Logo de la empresa">
             </div>
         </section>
     </main>
