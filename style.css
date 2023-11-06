@@ -198,14 +198,21 @@ li {
     /* border: solid #2597F4; */
 }
 
-.textoSeccion2 p{
+.textoSeccion2 p {
     margin-top: 1%;
     margin-left: 1%;
     margin-bottom: 2%;
     /* border: solid #2597F4; */
 }
-.textoSeccion2 h2{
+
+.textoSeccion2 h2 {
 
     margin-bottom: 2%;
     /* border: solid #2597F4; */
+}
+
+.boton {
+    font-weight: bold;
+    width: 12%;
+    padding: 1%;
 }
