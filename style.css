@@ -215,4 +215,8 @@ li {
     font-weight: bold;
     width: 12%;
     padding: 1%;
+    background-color: #2597F4;
+    border-radius: 10px;
+    border-color: #2597F4;
+    color: #f7f7f7;
 }
